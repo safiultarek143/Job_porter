@@ -19,7 +19,7 @@
                             </div>
                         </div>
 
-                        
+
 
                         <div class="form-group row">
                             <label for="last_name" class="col-md-4 col-form-label text-md-right">{{ __('Last Name') }}</label>
@@ -49,9 +49,8 @@
                             <div class="col-md-6">
                                  <select class="form-control" name="user_type_id" id="user" required >
                                     <option value="">Select User Type</option>
-                                    @foreach($user_type as $user_type)
-                                    <option value="{{ $user_type->user_type }}">{{ $user_type->user_type_name }}</option>
-                                    @endforeach
+                                    <option value="1">Applicant</option>
+                                     <option value="2">Company</option>
                                 </select>
                             </div>
                         </div>
@@ -65,7 +64,7 @@
                             </div>
                         </div>
 
-                       
+
 
                         <div class="form-group row">
                             <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
